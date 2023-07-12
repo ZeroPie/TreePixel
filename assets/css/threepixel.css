@@ -1,0 +1,594 @@
+.overlay {
+    /* display: none; */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 40%;
+    left: 0px;
+    opacity: 1;
+}
+
+a:active,
+a:hover,
+select,
+a:focus {
+    outline: 0 !important;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: 0 !important;
+    text-decoration: none
+}
+
+button:focus {
+    outline: 0 !important;
+}
+
+/* button{ color: #FAFBFF !important} */
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none !important
+}
+
+ul {
+    padding: 0 !important;
+    list-style-type: none;
+}
+
+.focus-visible-only:focus-visible {
+    outline: none !important;
+    border: none !important;
+}
+
+:focus-visible {
+    outline: none !important;
+    border: none !important;
+}
+
+button:focus-visible {
+    outline: none !important;
+    border: none !important;
+}
+
+
+
+.font400 {
+    font-family: 'noto_sansregular' !important;
+}
+
+.font500 {
+    font-family: 'noto_sansmedium' !important;
+}
+
+.font600 {
+    font-family: 'noto_sanssemibold' !important;
+}
+
+.font700 {
+    font-family: 'noto_sansbold' !important;
+}
+
+
+.font24 {
+    font-size: 24px;
+}
+
+.font16 {
+    font-size: 16px;
+}
+
+
+
+.colorGrey {
+    color: #6F7582 !important;
+}
+
+.mb0 {
+    margin-bottom: 0;
+}
+
+
+
+
+
+.headerSection {
+    background: #131314;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainSection {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 40px 0;
+    position: relative;
+    justify-content: space-between;
+}
+
+.freeLandingPagemsg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    width: 380px;
+    margin: 0 auto;
+    padding: 5px 0;
+    color: #fff;
+    background: radial-gradient(113.39% 338.55% at 2.5% 0%, #2D6922 0%, #B8E552 100%);
+    border-radius: 0px 0px 6px 6px
+}
+
+.headTitleBoxEdit {
+    margin-bottom: 24px;
+}
+
+.form-control {
+    height: 44px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.form-label {
+    margin-bottom: 3px;
+    font-size: 14px;
+    color: #333B4A;
+}
+
+.leftSideSection {
+    width: 790px;
+    padding: 0 20px;
+}
+
+.rightSideSection {
+    padding: 0 20px;
+}
+
+.userInfoBox {
+    margin-top: 16px;
+    position: relative;
+    border: 1px solid #EAECF0;
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+    border-radius: 16px;
+    padding: 24px 180px 24px 24px;
+}
+
+.userLogo {
+    width: 64px;
+    height: 64px;
+    background: #F2F4F7;
+    position: relative;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userLogoBox h2 {
+    font-size: 14px;
+}
+
+.userLogoBox {
+    position: absolute;
+    right: 40px;
+    top: 24px;
+}
+
+.addplusBx {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #FFFFFF;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 20px;
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+}
+
+.stepOneSection {
+    border-bottom: 1px solid #E0E3EB;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
+
+.socialIconBx {
+    width: 12.5%;
+}
+
+.allSocialSection {
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 14px;
+}
+
+.stepTwoSection {
+    max-width: 550px;
+}
+
+.socialIconBx {
+    width: 12.5%;
+    margin: 6px 0;
+    position: relative;
+}
+
+.socialLinktitleBox {
+    display: flex;
+}
+
+.selectLinkBx {
+    margin-top: 24px;
+    display: flex;
+    border: 1px solid #EAECF0;
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+    border-radius: 16px;
+    position: relative;
+    padding: 24px 24px 24px 16px;
+}
+
+.socialLinktitleBox img {
+    margin: 0 12px;
+}
+
+.titleaccountBox {
+    width: 100%;
+}
+
+.socialfillinfobox {
+    display: flex;
+    margin-top: 24px;
+    margin-left: -60px;
+}
+
+.socialfillinfobox .form-group:first-child {
+    width: 30%;
+    margin-right: 16px;
+}
+
+.socialfillinfobox .form-group:last-child {
+    width: 70%;
+}
+
+.titleaccountBox {
+    width: 100%;
+    margin-top: 6px;
+}
+
+.linkfillInfoBox {
+    width: 100%;
+}
+
+.socialfillinfobox .input-group-text {
+    background-color: transparent;
+    color: #333B4A;
+}
+
+.socialIconBx .addplusBx {
+    right: 14px;
+    bottom: -3px;
+}
+
+.dragBox {
+    margin-top: 12px;
+}
+
+.mobilePreviewSection {
+    position: relative;
+}
+
+.mobiledatabox {
+    position: absolute;
+    top: 88px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    max-width: 260px;
+    margin: 0 auto;
+    max-height: 520px;
+    overflow-y: auto
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.mobilePreviewSection .userLogo {
+    margin: 0 auto 12px;
+}
+
+.socialBtnLink {
+    margin: 16px 0px;
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid #E0E3EB;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+}
+
+.socialBtnLink1 {
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid #E0E3EB;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+}
+
+.socialBtnLink:hover {
+    background-color: #F0F0F0;
+}
+
+.socialBtnLink1:hover {
+    background-color: #F0F0F0;
+}
+
+.mobileSocialBtnBox {
+    border-top: 1px solid #E0E3EB;
+    margin-top: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mobileScreenWithOutLogo {
+    min-height: 455px;
+}
+
+.mobileSocialBtnBox1 {
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 600px;
+    margin: auto;
+    border-top: 1px solid #E0E3EB;
+    margin-top: 16px;
+}
+
+.launchSiteBtn {
+    height: 52px;
+    background: #C4FF57;
+    border: 1px solid #C4FF57;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    width: 100%;
+    color: #333B4A;
+}
+
+.launchSiteBtn:hover {
+    background-color: #9FD043;
+}
+
+.launchSiteBtn[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.publishSection {
+    border-bottom: 1px solid #E0E3EB;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
+
+.blackLogoimg {
+    position: absolute;
+    bottom: 72px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.modal-dialog {
+    max-width: 600px;
+}
+
+.successHead {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+.successDesc {
+    color: #6F7582;
+    font-weight: 500;
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.successCopyMain {
+    background-color: #C4FF57;
+    padding: 10px 16px;
+    max-width: 340px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.successCopyURL {
+    color: #107569;
+}
+
+.successCopyTxt {
+    color: #0F3D39;
+    font-weight: bold;
+}
+
+.websiteReadyContent {
+    padding: 60px 0;
+}
+
+.successModel .modal-header .modal-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.successModel .modal-header {
+    justify-content: center;
+}
+
+.successCopyBtn {
+    background-color: transparent;
+    border: none;
+    padding-left : 0;
+    padding-right : 0;
+}
+
+.successModel .modal-footer {
+    border: none;
+    justify-content: center;
+    padding: 0 0 30px;
+}
+
+.onenWebsiteBtn {
+    background: #FFFFFF;
+    border: 1px solid #C5C9D5;
+    color: #333B4A;
+    font-weight: bold;
+}
+
+.doneBtn {
+    background: #333B4A;
+}
+
+.successModel .modal-footer button {
+    height: 40px;
+    border-radius: 8px;
+    margin: 0 12px;
+}
+
+.publishSection h2 {
+    margin-bottom: 16px;
+}
+
+/*info icon message start*/
+.informationSpan {
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.informationSpan img {
+    margin-top: -2px;
+    cursor: pointer;
+}
+
+.noteSection.posAbsolute {
+    border-radius: 0px 8px 8px 8px;
+    width: 235px;
+    font-size: 12px;
+    line-height: 18px;
+    left: 43px;
+    bottom: auto;
+    top: 0px;
+    transform: translateX(-10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    z-index: 9;
+    font-weight: normal;
+    filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.04)) drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.04));
+    padding: 16px;
+    color: #6F7582 !important;
+    position: absolute;
+    background-color: #EEF0F5;
+}
+
+.noteSection.posAbsolute::after {
+    content: '';
+    position: absolute;
+    left: -16px;
+    border-top: 0px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-right: 16px solid #EEF0F5;
+    bottom: auto;
+    top: 0;
+}
+
+.informationSpan:hover .noteSection.posAbsolute {
+    transform: translateX(0px);
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+
+.mainDeatilPageSection .mobiledatabox_deployed {
+    /* position: relative;
+    top: auto;
+    left: 0;
+    right: 0; */
+    max-width: 580px;
+    margin: 0 auto;
+    min-height: 90vh;
+}
+
+.mainDeatilPageSection .userLogo {
+    height: 80px;
+    width: 80px;
+    margin: 10vh auto 12px;
+}
+
+.mainDeatilPageSection {
+    background: linear-gradient(180deg, #FFFFFF 72.61%, #ECFFC9 100.89%);
+    text-align: center;
+    /* height: 100vh; */
+    /* padding-top: 100px; */
+    /* padding-bottom: 5px; */
+    /* min-height: 100vh; */
+}
+
+img.footerLogo {
+    /* position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 20px; */
+    margin: 3vh auto;
+    width: 16vh;
+    height: 8vh;
+}
+
+.error-message {
+    color: red;
+}
+
+.grabbable {
+    cursor: move;
+    /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+/* (Optional) Apply a "closed-hand" cursor during drag operation. */
+.grabbable:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.confirmLaunchBtn {
+    background: #C4FF57;
+    border: 1px solid #C4FF57;
+    color: #333B4A;
+}
+
+.confirmLaunchBtn:hover {
+    background-color: #9FD043;
+}
+/*info icon message end*/

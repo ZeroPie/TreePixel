@@ -1,0 +1,90 @@
+ .font48{font-size: 48px;}
+.font24{font-size: 24px;}
+.font64{font-size: 64px;}
+.headTitleBox {padding: 150px 0;}
+.roadMapBox {display: flex;justify-content: space-between;}
+.colorRound {height: 26px;width: 26px;background-color: #FFC014;border-radius: 50px;margin: 0 auto 16px;}
+.RoadmapSection {background-color: #000;padding: 350px 0 150px; color: #ECF1FF;}
+.RoadmapSection p { font-size: 20px;max-width: 950px;}
+.roadMapBoxsection {padding-top: 50px;}
+.roadMainBox h2{color: #ECF1FF;}
+
+
+.mapInfo li{position: relative; padding-left: 30px; margin: 8px 0; font-size: 22px;}
+.mapInfo li img {position: absolute;left: 0;top: 5px;}
+.roadMainBox {text-align: center;}
+.roadTitle {font-size: 32px;font-weight: bold; position: relative; padding-left: 38px;}
+.roadMapInfoBox{display: flex; justify-content: space-around; align-items: center; max-width: 900px; margin: 0 auto;}
+.round{height: 26px;width: 26px;background-color: #FFC014;border-radius: 50% ; display: inline-block;position: absolute;top: 11px; left: 0;}
+.blueBtn.btnJoinCommunity {width: 250px;}
+
+
+
+
+.RoadmapSection .responsive-tabs.tabs > nav ul li.active{border: none;}
+.RoadmapSection .responsive-tabs.tabs > nav ul li a{background: transparent;}
+.RoadmapSection .responsive-tabs.tabs > nav ul li{border: none; width: 20%;}
+.RoadmapSection .responsive-tabs.tabs > nav ul li:last-child { border-right: none;  }
+.RoadmapSection .responsive-tabs.tabs > div.content{border: none; background: transparent;}
+.responsive-tabs.tabs{margin-top: 80px;}
+.ecosystemSection {margin-bottom: -300px;}
+img.whitetab {display: none;}
+.ourMainProjecttab .responsive-tabs.tabs>nav ul li.active img.whitetab { display: block;} 
+.ourMainProjecttab .responsive-tabs.tabs>nav ul li.active img.colortab { display: none;}
+.section-2 {position: relative;}
+img.mainbckimg {position: absolute;bottom: 0;}
+.inuFooterMenu li a:hover {color: #ffc014;}
+
+
+/* Disha Css here */
+.buysweplydiv{width: 650px; margin: 50px auto;}
+.buysweplydiv h4 {font-size: 32px; font-weight: bold; margin: 24px 0 24px 0;}
+.buysweplydiv h5{font-size: 20px; font-weight: bold;}
+.stageboxmain {background-color: #FAFBFC; border-radius: 8px; padding: 20px 20px 20px 20px;}
+.stagebox{font-weight: bold;}
+.stagebox span {color: white;background-color: #14D092;border-radius: 27px;padding: 5px 7px 4px 7px;margin-left: 5px;font-size: 13px;}
+.backbutton img {margin-right: 15px;}
+.sweplypricemain {display: flex; justify-content: space-between; margin-top: 20px;}
+.sweplypricemain p {margin: 12px 0 0px 0; font-size: 16px;}
+.sweplyprice{width: 50%;}
+.price {font-weight: bold;}
+.sweplyprice img {margin-left: 10px;}
+.enteramount h3 {font-weight: bold; font-size: 16px; }
+.enteramount p {font-size: 12px;color: #6F7582;margin-bottom: 0;padding-left: 10px;padding-top: 2px;}
+.enteramount {border-top: 1px solid #EEF0F5; border-bottom: 1px solid #EEF0F5; margin-top: 30px; padding: 24px 0 20px; margin-bottom: 2px;}
+/* .form-group {margin-bottom: 0 !important;} */
+.buybtn {width: 100%; height: 56px; line-height: 56px; display: inline-block; background-color: rgba(255, 185, 0, 0.24); text-align: center; color: #594307; font-weight: bold; border-radius: 8px; margin-top: 20px;}
+/* .form-group{position: relative;} */
+.approxtext {position: absolute; right: 15px; top: 20px; color: #6F7582; border-left: 2px solid #E0E3EB; padding-left: 15px;}
+.backbuttonsweply{font-size: 24px; font-weight: bold;}
+.backbuttonsweply img{margin-right: 15px;}
+.willpaybox{height: 80px; width: 49%; background-color: #fff; text-align: center; padding: 20px 0 20px 0;}
+.sweplypricemain h5 {font-size: 16px; color: #6F7582; margin-top: 0; font-weight: normal;}
+.willpaybox p{font-size: 16px; color: #6F7582; margin-top: 0;}
+.willpaybox.right {background-color: #FAFBFC;}
+.willpaybox.right p {color: #333B4A;}
+.paywithBox {display: flex; justify-content: space-between; align-items: center;}
+.paywithbox ul{border:1px solid #000;}
+.paywithbox ul {border: 1px solid #EEF0F5; border-radius: 9px;}
+.paywithbox li {padding: 20px 30px; border-top: 1px solid #eef0f5;}
+.paywithtitle {display: flex; justify-content: space-between; align-items: center; padding: 20px 0 10px; margin-top: 20px; border-top: 1px solid #EEF0F5;}
+.paywithtitle h2 {font-size: 16px; color: #6F7582;}
+.paywithbox li:first-child{border-top: none}
+.timewatch{font-size: 16px; color: #FFC014;}
+.willpaybox p span {font-weight: bold;}
+.enteramount p {font-size: 12px;}
+.amtdescription{font-size: 12px !important;}
+.stageboxmain.purchase {padding: 20px 20px 20px 20px;border: 1px solid rgba(255, 192, 20, 0.4);background-color: #fff;}
+.sweplypricemain.purchase {margin: 0;}
+.buysweplydiv p {font-size: 16px;}
+.buysweplydiv.purchase h3 {font-size: 24px;font-weight: bold;}
+.status {margin: 30px 0 30px 0;}
+.transactionstatus {display: flex; justify-content: space-between; font-size: 16px; margin: 30px 0 30px 0;}
+.statusTxt {font-weight: bold;}
+.statusDone {font-size: 14px; background: rgba(20, 208, 146, 0.4); border-radius: 11px; padding: 3px 9px 3px 9px; display: inline-block; text-align: center; font-weight: bold; color: #085239;}
+.statusDone.pending {background: rgba(255, 192, 20, 0.4); color: #594307;}
+.StatusBoxRight span {margin-left: 10px;}
+.homeLinkInput {background-color: white; color: black; display: flex; justify-content: flex-start; align-items: center;}
+
+
+/* Disha Css here */
