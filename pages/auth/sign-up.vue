@@ -111,21 +111,35 @@ const handleSignUp = async () => {
       email: emailForSignup.value,
       password: passwordForSignup.value,
       options: {
-        emailRedirectTo: `${window.location.origin}/private/dashboard`
+        emailRedirectTo: `${window.location.origin}/auth/redirect`
       }
     })
+
     if (data && data.user) {
       const userInfo = [{
-        id: data.user.id,
+        id:data.user.id,
         username: userNameForSignup.value,
-        email: emailForSignup.value
+        email:data.user.email
       }]
-      let { error: error1 } = await supabase.from('profile').insert(userInfo as never[])
-      const websiteInfo = [{
-        user_id: data.user.id,
-        link: userNameForSignup.value,
-      }]
-      let { error: error2 } = await supabase.from('website').insert(websiteInfo as never[])
+      const { error: error1 } = await supabase
+        .from('profile')
+        .insert(userInfo as never)
+      if (error1)
+        alert(error1.message)
+      else {
+        const websiteInfo = [{
+          user_id: data.user.id,
+          link: userNameForSignup.value,
+        }]
+        let { error: error2 } = await supabase.from('website').insert(websiteInfo as never[])
+        if (error2) alert(error2.message)
+        else {
+          const { data: resDataSuccess } = await useFetch('/api/create-stripe-customer', {
+              method: 'post',
+              body: { email: data.user.email, id: data.user.id }
+          })
+        }
+      }
     }
     if (error) {
       alert(error.message)

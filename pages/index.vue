@@ -281,7 +281,7 @@ const goToSignUp = async () => {
   </div>
 
   <div v-if="loading" class="overlay" id="loadingSpinner">
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center h-100 align-items-center">
       <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem; z-index: 20;">
         <span class="sr-only">Loading...</span>
       </div>

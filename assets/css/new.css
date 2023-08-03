@@ -1,0 +1,311 @@
+.font600{font-weight: 600;}
+.ml8{margin-left: 8px;}
+.ml24{margin-left: 24px;}
+.mr8{margin-right: 8px;}
+.mr24{margin-right: 24px;}
+.mr32{margin-right: 32px;}
+.mr12{margin-right: 12px;}
+.font14{font-size: 14px;}
+
+.newHeaderMain .claimBtn{height: 40px;line-height: 40px;}
+.newHeaderRightMenu .dropdown button{background-color: #ffffff;color: #344054;}
+.dropdown-toggle::after{content: none;}
+.dropdown-toggle i{font-size: 20px;line-height: 0; margin-left: 8px;}
+
+.mainSection {max-width: 1200px;margin: 0 auto;display: flex;padding: 40px 0;position: relative;justify-content: space-between;}
+.mainSection-plus {
+    z-index: -1;
+    opacity: 0.6;
+  }
+
+.freeLandingPagemsg {position: absolute;top: 0;right: 0;left: 0;text-align: center;width: 380px;margin: 0 auto;padding: 5px 0;color: #fff;background: radial-gradient(113.39% 338.55% at 2.5% 0%, #2D6922 0%, #B8E552 100%);
+border-radius: 0px 0px 6px 6px;}
+.leftSideSection {padding: 0 20px;}
+.headTitleBox {margin-bottom: 24px;}
+.stepOneSection {border-bottom: 1px solid #E0E3EB;padding-bottom: 24px;margin-bottom: 24px;}
+.userInfoBox {margin-top: 24px;   position: relative;border: 1px solid #EAECF0;box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);border-radius: 16px;padding: 24px 180px 24px 24px;}
+.form-label {margin-bottom: 3px;font-size: 14px;color: #333B4A;}
+.form-control {height: 44px;width: 100%;font-size: 14px;}
+.userLogoBox {position: absolute;right: 40px;top: 24px;}
+.userLogoBox h2 {font-size: 14px;}
+.userLogo {width: 64px;height: 64px;background: #F2F4F7;position: relative;border-radius: 50px;display: flex;justify-content: center;align-items: center;}
+.addplusBx {position: absolute;right: 0;bottom: 0;background: #FFFFFF;height: 20px;width: 20px;border-radius: 50px;text-align: center;line-height: 20px;box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);}
+.socialIconBx .addplusBx {right: 14px;bottom: -3px;}
+.allSocialSection {display: flex;flex-flow: wrap;margin-top: 14px;}
+.socialIconBx {width: 68px;margin: 6px 0;position: relative;}
+.rightSideSection {padding: 0 20px;}
+.publishSection {border-bottom: 1px solid #E0E3EB;padding-bottom: 24px;margin-bottom: 24px;}
+.publishSection h2 {margin-bottom: 16px;}
+.launchSiteBtn {height: 52px;background: #C4FF57;border: 1px solid #C4FF57;box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);border-radius: 8px;width: 100%;color: #333B4A;}
+.informationSpan {margin-left: 6px;cursor: pointer;}
+
+.createWebsiteModal .modal-footer .greenBtn {background-color: #C4FF57;color: #333b4a;border: 1px solid #C4FF57;font-weight: 600;padding: 8px 16px;border-radius: 8px;font-size: 16px;display: block;}
+
+.pricingSectionName{color: #C4FF57;margin-bottom: 12px;}
+.pricingSectionHead{font-size: 48px;font-weight: 600;color: #F5F8FF;margin-bottom: 16px;}
+.pricingSectionDesc{font-size: 20px;color: #8C94A3;margin-bottom: 24px;}
+.pricingSectionMain{background-color: #0A0A0A;padding: 96px 0;}
+
+.pricingSectionTabs{border: 1px solid #2B2E33;background: #1B1C1F;padding: 8px;max-width: 392px;width: 100%;margin: 0 auto 24px;}
+.pricingTabs{padding: 10px 14px;color: #8C94A3;}
+.pricingTabs.active{background-color: #C4FF57;box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);color: #0A0A0A;}
+.pricingTabs span{border-radius: 16px;background: #F5FFE1;color: #6FA439;padding: 0 10px;margin-left: 8px;font-weight: 500;font-size: 14px;}
+
+.pricingPlanList{background-color: #121314;}
+.pricingPlanHeadingMain{padding: 32px 32px 24px;border-bottom: 1px solid #2B2E33;}
+.pricingPlanHead{font-size: 24px;font-weight: 600;margin-bottom: 4px;color: #F5F8FF;}
+.pricingPlanDesc{color: #8C94A3;}
+.pricingPlanPrice {font-size: 60px;font-weight: 600;color: #F5F8FF;}
+.pricingPlanPrice sup{font-size: 36px;}
+.pricingPlanPrice sub{font-size: 16px;font-weight: 500;color: #8C94A3;}
+.pricingPlanContent{padding: 32px 32px 40px;border-bottom: 1px solid #2B2E33;}
+.pricingPlanContentHead{color: #6FA439;}
+.pricingPlanContentDesc{color: #F5F8FF;margin-bottom: 24px;}
+.pricingPlanContentPoints{padding-left: 36px;color: #F5F8FF;}
+.pricingPlanContentImg{left: 0;}
+.planGetStartMain{padding: 32px;}
+.planGetStartMainBtn{padding: 12px 20px;background: #C4FF57;}
+.pricingPlanHead span{padding: 2px 10px;background-color: #FFDD55;color: #0A0A0A;font-size: 14px;margin-left: 8px;}
+
+.faqHeadingSectionPricing{width: 32%;margin-right: 64px;}
+.faqQuestionMainPrice{width: 68%;}
+.faqSupportHeadPricing{color: #C4FF57;margin-bottom: 12px;}
+.faqHeadPricing{font-size: 36px;margin-bottom: 20px;}
+.faqDescPricing{color: #EAECF0;}
+.faqSectionMainPricing{padding: 150px 0 69px;}
+
+.faqQuestionPrice{font-size: 18px;}
+.faqAnsPrice{color: #8C94A3;margin-top: 8px;padding-right: 50px;}
+.faqQuestionPrice span{right: 0;top: 0;}
+.faqQuestionPrice{padding-right: 30px;}
+.questionMinus{display: none;}
+.faqQuestionPrice.active .questionMinus{display: block;}
+.faqQuestionPrice.active .questionPlus{display: none;}
+.faqQuestionAnsPrice{margin-bottom: 32px;}
+
+.stillQuestionMain{padding: 32px;background-color: #1B1C1F;}
+.stillQuestionHead{font-size: 20px;color: #F5F8FF;margin-bottom: 8px;}
+.stillQuestionDesc{font-size: 18px;color: #8C94A3;}
+
+.error404Head{color: #C4FF57;margin-bottom: 12px;}
+.pageNotFoundHead{font-size: 60px;color: #F5F8FF;margin-bottom: 24px;}
+.sorryContentDesc{font-size: 20px;color: #F5F8FF;margin-bottom: 48px;}
+
+.whiteBGBtn{background-color: #ffffff;font-size: 14px;font-family: 'noto_sansmedium';height: 44px;display: inline-block;line-height: 44px;padding: 0 16px;color: #000;border-radius: 6px;}
+.middle404{padding: 30px 0;}
+.sweplyRightMenu ul .dropdown ul{display: none;}
+.dropdown-menu.show {display: block !important;}
+
+.headerProfileDropDown .dropdown-menu{min-width: 240px;padding: 0;}
+.headerProfileDropDown .dropdown button{height: 40px;width: 40px;border-radius: 50%;overflow: hidden;padding: 0;}
+.headerProfileDropDown .dropdown button img{height: 100%;width: 100%;object-fit: cover;}
+.headerProfileDropDown a{padding: 12px 16px;border-bottom: 1px solid #EAECF0;color: #344054;}
+.dropdownProfileEmail{color: #475467;}
+
+.profileModal .modal-body{padding: 16px 24px;}
+.userPlanDetails{background-color: #1B1C1F;box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.04), 0px 0px 24px 0px rgba(0, 0, 0, 0.04);border-radius: 12px;margin-bottom: 24px;}
+.userPlanName{font-size: 18px;margin-bottom: 6px;}
+.userPlanDesc{color: #8C94A3;}
+.userPlanName span{background-color: #12B881;padding: 2px 10px;color: #FAFBFC;}
+.uploadProfilePic{height: 72px;width: 72px;border-radius: 50%;border: 2px dashed #6FA439;}
+.browseImgBtn{background-color: transparent;border: none;right: -3px;bottom: 0;padding: 0;} 
+.emailIcon{top: 11px;left: 14px;}
+.inputIconAdded input{padding-left: 40px !important;}
+
+.forgotPlanBillBtns div, .forgotPlanBillBtns a{color: #6F7582;cursor: pointer;}
+.profileModal .modal-header{border: none;}
+
+.overAnalyticsMenu li a{border-radius: 1px;border-bottom: 4px solid transparent;border-radius: 1px;}
+.overAnalyticsMenu li a span{padding: 2px 10px;border-radius: 16px;background-color: #C4FF57;color: #333B4A;font-size: 14px;font-weight: 500;margin-left: 8px;}
+.overAnalyticsMenu li a.active{color: #C4FF57;border-bottom: 4px solid #C4FF57;background: #1B1C1F;}
+.overAnalyticsMenu li a:hover{background: #1B1C1F;}
+.sweplyMenu li a{padding: 10px 20px}
+.shareLinkHead{color: #344054;}
+.shareLinkDesc{font-size: 12px;color: #6F7582;}
+.projectLinkTree{border: 1px solid #E0E3EB;background: #FFF;box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);padding: 10px 14px;}
+.linkShareModal.profileModal .modal-body {padding: 0px;}
+.shareLinkModalContent{padding: 12px 16px;border-bottom: 1px solid #EAECF0;}
+.userprojectLink{color: #6F7582;}
+.userprojectLink span{color: #333B4A;}
+
+.siteContentTxtEdit a{color: #6FA439;}
+.middleSection{max-width: 1200px;margin: 0 auto;padding: 40px 0;position: relative;}
+.viewSiteHead{font-size: 24px;margin-right: 12px;}
+.switchBtn {height: 20px;}
+.viewSiteEditBtn .claimBtn{border: 1px solid #C5C9D5;}
+.viewSiteHeadingMain{border-bottom: 1px solid #E0E3EB;padding-bottom: 12px;}
+.addSocialLinks{border: 1px solid #F2F4F7;background: #F9FAFB;padding: 4px;}
+.addSocialLinksBtn{padding: 8px 12px;margin-right: 8px;}
+.addSocialLinksBtn.active{background: #FFF;box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);}
+.proSpan {padding: 2px 10px;border-radius: 16px;background-color: #C4FF57;color: #333B4A;font-size: 12px;font-weight: 500;margin-left: 8px;}
+.addSocialLinksBtn:last-child{margin: 0;}
+.addSocialLinksDropDown .dropdown-menu{width: 92px;min-width: auto;}
+.viewSiteMain{padding: 0 16px;}
+
+
+/*plan and bill page css*/
+.billingPageSection .container { max-width: 996px;}
+.biilingPageBox {background-color: #fff;padding: 0 50px;}
+.titleBiilingBox h2 {font-size: 30px;font-weight: 600;}
+.titleBiilingBox a {color: #6FA439;margin-bottom: 16px;display: block;}
+.titleBiilingBox p {font-size: 16px;color: #475467;}
+.blackLogoImg{text-align: center;}
+.titleBiilingBox {border-bottom: 1px solid #EAECF0;margin-bottom: 20px;}
+.blackLogoImg {margin: 0px auto 0px;display: block; padding: 40px 0 40px;}
+.currentPlantitleBox h2{font-size: 18px; font-weight: 600;     margin-bottom: 4px;}
+.currentPlantitleBox p{font-size: 14px; }
+.rightFillter button{  border-radius: 6px; padding: 0 12px; line-height: 38px;  font-weight: bold;
+height: 36px;border: none;background-color: transparent; color: #8C94A3;}
+.rightFillter button.active {color: #6FA439;
+box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);
+background-color: #F5FFE1;border: navajowhite;}
+.rightFillter button span {color: #12B881;background: #EBFFF8;border-radius: 16px;padding: 2px 10px;margin-left: 10px;}
+.rightFillter {border: 1px solid #E0E3EB;border-radius: 8px;display: flex;align-items: center;padding: 0 10px;height: 52px;}
+.radioTitleBox h2 {font-size: 20px;font-weight: bold;color: #333B4A;margin-bottom: 4px;}
+.radioTitleBox p {margin-bottom: 0;color: #6F7582;font-size: 14px;}
+.planPriceSection h3 {font-size: 36px;font-weight: bold; color: #333B4A;}
+.planPriceSection h3 span{font-weight: normal; font-size: 16px;}
+.planPriceSection p {color: #333B4A;font-size: 16px;font-weight: normal;     margin-bottom: 0;}
+.radioTitleBox {border-bottom: 1px solid #E0E3EB;padding: 16px;}
+.planPriceSection {padding: 24px 16px;}
+.showDetailsBox h2 {font-size: 12px;color: #6F7582;text-align: center;margin: 0px;padding: 12px 0;}
+.billingPageSection {background-image: url(/images/bg-image.webp); background-repeat: no-repeat;background-position: center center;height: 100%;width: 100%;background-size: cover;}
+.proAndFreeSection .radio-btns{display: flex; justify-content: space-between;}
+.changePlanCancalPlanText button {height: 40px;box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+border: 1px solid #E0E3EB;background-color: transparent;border-radius: 8px;font-weight: 600;padding: 0 16px;line-height: 40px;}
+.changePlanCancalPlanText {text-align: right;     margin-top: 10px;}
+button.changePlanBtn {background-color: #C4FF57;margin-left: 10px;border-color: #C4FF57;}
+.billinghistoryTitle button {height: 40px;padding: 0 16px;box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);border: 1px solid #D0D5DD;border-radius: 8px;font-size: 14px;font-weight: 600;}
+.billinghistoryTitle h2 {font-size: 18px;font-weight: bold;color: #101828;}
+.billinghistoryTitle {margin-top: 40px;align-items: center;border-top: 1px solid #EAECF0;padding-top: 24px;}
+
+.billingtable td {height: 72px;vertical-align: middle;}
+.billingtable th {height: 50px;vertical-align: middle;}
+.billinghistoryTitle button img {margin-right: 8px;}
+.billingtable [type="checkbox"] + label{height: 9px;}
+button.downBtnBox {background-color: transparent;border: none;}
+.billingtable {border: 1px solid #EEF0F5;border-radius: 6px;margin-top: 24px;}
+.paidTag {font-size: 12px;font-weight: bold;color: #027A48;    background-color: #ECFDF3;border-radius: 16px;padding: 2px 8px 2px 6px;}
+.showDetailsBox {border: 1px solid #E0E3EB;border-top: none;border-radius: 0 0 12px 12px;}
+.radio-btns input[type=radio]:checked ~ .showDetailsBox{border: 2px solid #6FA439;border-top: 0;}
+.showDetailsBox .faqQuestionPrice.position-relative {font-size: 12px;}
+
+/*Radio Buttons*/
+.radio-btns .radio-btn{display: block;position: relative;margin-right: 0px;width: 50%;}
+.radio-btns .radio-btn:first-child{margin-right: 12px;}
+.radio-btns .radio-btn input[type=radio]{position: absolute;visibility: hidden;}
+.radio-btns .radio-btn label{color: #646464;display: block;position: relative;font-size: 16px;padding: 0;
+margin: 10px auto 0;z-index: 9;cursor: pointer;-webkit-transition: all 0.25s linear;     border: 1px solid #E0E3EB;
+border-radius: 12px 12px 0 0;}
+.radio-btns .radio-btn .check{  z-index: 9; display: block;position: absolute;border: 2px solid #AAAAAA;border-radius: 100%;height: 20px;    
+width: 20px;top: 42px;left: auto;transition: border .25s linear;-webkit-transition: border .25s linear; right: 20px;}
+.radio-btns .radio-btn .check::before {
+border-radius: 100%;content: "";display: block;height: 10px;left: 3px;margin: auto;position: absolute;top: 3px;
+transition: background 0.25s linear 0s;width: 10px;}
+  .radio-btns input[type=radio]:checked ~ .check {border: 2px solid #6FA439;}
+  .radio-btns input[type=radio]:checked ~ .check::before{background: #6FA439;}
+  .radio-btns input[type=radio]:checked ~ label{  color: #6FA439; border: 2px solid #6FA439;border-bottom: 1px solid #E0E3EB;}
+
+.radio-btns input[type=radio]:checked ~ label .radioTitleBox {border-bottom: 2px solid #6FA439; background-color: #F5FFE1;     border-radius: 12px 12px 0 0;}
+
+.pricingDetailsHead{font-size: 12px;color: #6F7582;text-align: center;margin: 0px;padding: 12px 0;}
+.pricingDetailsHead.active{border-top: 1px solid #E0E3EB;}
+.pricingDetailsHead i{font-size: 20px;line-height: 0;}
+.pricingDetailsHead span{padding-top: 8px;}
+.pricingShowDetailsContent .pricingPlanContentDesc, .pricingShowDetailsContent .pricingPlanContentPoints{color: #333b4a;}
+.pricingDetailsHead span{margin-left: 8px;}
+
+/*plan and bill page end css*/
+
+/* / site setting page css start / */
+.middleSection.siteSettingPage {max-width: 1000px;}
+/* .siteTitleTxt span {background-color: #F5FFE1; margin-left: 10px;
+height: 22px;display: inline-block;font-size: 12px;padding: 0 10px;color: #6FA439;font-weight: 500;border-radius: 6px;line-height: 23px;} */
+.siteTitleTxt {font-size: 16px;font-weight: 600;}
+.siteSettingTitle{font-size: 24px; font-weight: 600;}
+.siteInfoSection h2 {font-weight: 600;font-size: 20px;}
+.siteInfoSection {    margin-top: 20px; box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.04);padding: 20px 20px;border: 1px solid #EEF0F5;border-radius: 12px;}
+.siteStatusSection {border-top: 1px solid #EEF0F5;border-bottom: 1px solid #EEF0F5;padding: 16px 0 16px;}
+.SiteUserNameBox h3 {font-weight: 600;font-size: 16px;margin-top: 16px;}
+button.inputSaveBtn {position: absolute;right: 0;top: 25px;font-size: 16px;color: #6FA439;font-weight: 600;background-color: #F5FFE1;height: 44px;padding: 0 20px;border-radius: 0 7px 7px 0;border: 1px solid #6FA439;}
+.SiteUserNameBox .form-group input{    border-color: #6FA439; padding-left: 106px;}
+span.leftTxtInput {position: absolute;left: 15px;top: 37px;     color: #838383;}
+.siteStatusSection.brandingRemoveBox {border-bottom: none;padding-bottom: 0;}
+.titleCustomMeta h3 {font-size: 16px;font-weight: 600;margin-bottom: 5px;}
+.titleCustomMeta {border-top: 1px solid #EEF0F5;padding-top: 20px;margin-top: 20px;}
+.titleCustomMeta p {color: #6F7582;}
+.labelImageSection {border-radius: 12px;border: 1px solid #EAECF0;text-align: center;padding: 30px 20px; margin-bottom: 20px;}
+.uploadText a {color: #6FA439;font-weight: 600;}
+.labelImageSection p {font-size: 12px;}
+.uploadText {margin: 6px 0 3px;}
+h5.labelImgTitle {font-size: 14px;}
+span.charactersTxt {position: absolute;right: 0;margin-top: 2px;}
+.customMetadataBox .form-group{margin-bottom: 30px;}
+.titleSub{font-size: 14px; font-weight: normal;     color: #6F7582;}
+.facebookInputBox h4 {font-size: 16px;font-weight: 600;margin-bottom: 4px;}
+.facebookInputBox {margin-top: 24px;}
+/* / site setting page css end / */
+
+/* Congratulations page start here */
+.congratulationsPurchaseSection {position: relative;height: 100vh;}
+.purchaseMainBox h2 {font-size: 20px;font-weight: 600;     margin: 20px 0 24px;}
+.purchaseMainBox h3 {font-size: 16px;font-weight: 600;}
+.checkEmailTxt{font-size: 16px;}
+.redirectBtn {border: 1px solid #C5C9D5;font-size: 16px;font-weight: bold;padding: 8px 16px;border-radius: 8px;display: inline-block;margin-top: 10px;}
+.purchasePlanInfoBox {border: 1px solid #EEF0F5;background-color: #F5F6FA;border-radius: 8px;
+display: inline-block;     padding: 16px;     margin: 20px 0 20px;}
+.purchasePlanBox {display: inline-block;padding-right: 20px;border-right: 1px solid #E2E4EA;margin-right: 20px;}
+.purchasePlanBox:last-child{padding-right: 0; margin-right: 0; border-right: none;}
+/* Congratulations page start here */
+
+@media (max-width: 991px) {
+    .headerBox{justify-content: unset !important;}
+    .profileDropdownMain {margin-left: auto;}
+    li.headerProfileDropDown {margin-right: 55px;}
+    .menuIcon{position: absolute;right: 15px;}
+    .shareLinkBtn{position: absolute;right: 100px;}
+    
+    .mainSection{display: block !important;}
+    .leftSideSection,.rightSideSection{width: 100%;}
+    
+    .socialLinksSection{margin-bottom: 24px;}
+
+    .pricingPlanFlexSection{display: block !important;}
+    .pricingPlanList{width: 100% !important;margin: 0 0 24px;}
+    .faqSectionMainPricing{display: block !important;padding: 30px 0;}
+    .faqHeadingSectionPricing{margin: 0 0 24px;width: 100%;}
+    .faqQuestionMainPrice {width: 100%;}
+    .pricingSectionMain{padding: 60px 0;}
+}
+
+@media (max-width: 767px) {
+    .stillQuestionMain{display: block !important;}
+    .stillQuestion{margin-bottom: 16px;}
+    .addSocialLinksMain{display: block !important;}
+    .addSocialLinks{display: block !important;white-space: nowrap;overflow: auto;}
+    .addSocialLinksBtn{display: inline-block;}
+    .addSocialLinksDropDown{margin-top: 16px;}
+
+    .planTitleAndFilterSection,
+    .proAndFreeSection .radio-btns{display: block !important;}
+    .proAndFreeSection .radio-btns .radio-btn{width: 100%;}
+    .biilingPageBox{padding: 0 15px;}
+}
+
+@media (max-width: 576px) {
+    .userLogoBox{position: relative;right: auto;top: auto;margin-bottom: 24px;}
+    .userInfoBox{padding: 24px;}
+    li.headerProfileDropDown {right: 47px;}
+    .newHeaderMain .claimBtn{margin-top: 0;}
+    .pricingPlanHeadingMain{display: block !important;}
+    .pricingSectionHead{font-size: 32px;}
+    .pricingTabs span{display: block;width: 83px;margin: 5px auto 0;}
+    .pricingTabs{width: 50%;text-align: center;}
+    .claimBtn {text-align: center;}
+    .viewSiteEditBtn .claimBtn span{display: none;}
+    .viewSiteEditBtn .claimBtn svg{margin: 0;}
+    
+    .planTitleAndFilterSection .rightFillter span{display: block;width: 82px;margin: 5px auto 0;}
+    .rightFillter button{line-height: normal;padding: 6px 12px;height: auto;width: 50%;text-align: center;}
+    .rightFillter{height: auto;}
+}

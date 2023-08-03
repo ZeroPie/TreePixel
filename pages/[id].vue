@@ -3,16 +3,22 @@
 const route = useRoute()
 const supabase = useSupabaseClient()
 const avatarHelper = useAvatarHelper()
+import { onMounted } from 'vue';
+
+onMounted(async () => {
+  await fetch(`/api/visited?linkTo=${link}`)
+})
 
 const link = route.params.id
 
 const socialLinks = ref<Array<ILink>>()
-const filePath = ref<string>("")
+const avatarFilePath = ref<string>("")
 const businessName = ref<string>("")
 const bioDescription = ref<string>("")
 const avatarPath = ref<string>("")
 const loading = ref<boolean>(false)
 const status = ref<boolean>(false)
+const hideBranding = ref<boolean>(false)
 
 interface ILink {
   img: string,
@@ -31,12 +37,30 @@ interface ILink {
 interface Website {
   name: string;
   bio: string;
-  filepath: string;
+  avatarfilepath: string;
   links: Array<any>;
-  status:boolean;
+  status: boolean;
+  hideBranding: boolean;
 }
 
-const { data: website } = await useAsyncData('website', async () => {
+supabase.channel('custom-all-channel')
+  .on(
+    'postgres_changes',
+    { event: '*', schema: 'public', table: 'website' },
+    (payload) => {
+      if(payload.new as Website) {
+        businessName.value = (payload.new as Website).name ? (payload.new as Website).name : ""
+        bioDescription.value = (payload.new as Website).bio ? (payload.new as Website).bio : ""
+        avatarFilePath.value = (payload.new as Website).avatarfilepath ? (payload.new as Website).avatarfilepath : ""
+        socialLinks.value = (payload.new as Website).links ? (payload.new as Website).links : []
+        status.value = (payload.new as Website).status ? (payload.new as Website).status : false
+        hideBranding.value = (payload.new as Website).hideBranding ? (payload.new as Website).hideBranding : false
+      }
+    }
+  )
+  .subscribe()
+
+  const { data: website } = await useAsyncData('website', async () => {
   loading.value = true
   const { data } = await supabase
     .from('website')
@@ -47,17 +71,19 @@ const { data: website } = await useAsyncData('website', async () => {
   loading.value = false
   return data
 })
-
+console.log(website.value)
 if (website.value) {
   businessName.value = (website.value as Website).name ? (website.value as Website).name : ""
   bioDescription.value = (website.value as Website).bio ? (website.value as Website).bio : ""
-  filePath.value = (website.value as Website).filepath ? (website.value as Website).filepath : ""
+  avatarFilePath.value = (website.value as Website).avatarfilepath ? (website.value as Website).avatarfilepath : ""
   socialLinks.value = (website.value as Website).links ? (website.value as Website).links : []
   status.value = (website.value as Website).status ? (website.value as Website).status : false
+  hideBranding.value = (website.value as Website).hideBranding ? (website.value as Website).hideBranding : false
 }
 
-if (filePath.value)
-  avatarPath.value = await avatarHelper.downloadAvatar(filePath.value);
+if (avatarFilePath.value)
+  avatarPath.value = await avatarHelper.downloadAvatar(avatarFilePath.value);
+
 </script>
 
 <template>
@@ -84,19 +110,30 @@ if (filePath.value)
           </template>
         </div>
       </div>
-      <img class='footerLogo' src="/images/logo-black.svg" alt='user' />
+      <img v-if="!hideBranding" class='footerLogo' src="/images/logo-black.svg" alt='user' />
     </div>
   </div>
-  <div v-else class="forgotPageSection">
-    <img class="forGotBgImg" src="/images/forgotBg.webp" alt="" />
-    <div class="forgotWhiteBox">
-      <div class="forGotMainBox text-center">
-        <a href="/">
-          <img src="/images/logo-black.svg" alt="" />
-        </a>
-        <h5 class="mt-3">Sorry! This link is not existed or paused.</h5>
-        <a class="btnsweply mt-3 pointer" href="/">Visit Our Website</a>
+    <div v-else class="middleSectionBox middle404">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="w-50">
+            <a href="/">
+              <img src="/images/logo.svg" alt="" />
+            </a>
+            <div class="pageNotFoundHead font600">
+              Sorry!
+            </div>
+            <div class="sorryContentDesc">
+              This link is not existed or paused.<br>
+            </div>
+            <div>
+              <a class="claimBtn" href="/">Take me home</a>
+            </div>
+          </div>
+          <div class="w-50" style="text-align: right;">
+            <img src="/images/image-404.svg" style="width: 80%;" alt="" />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 </template>
