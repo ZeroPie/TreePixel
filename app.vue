@@ -1,12 +1,12 @@
 <script setup lang="ts">
 useHead({
-	title: 'Treepixel 2.0'
-})
+  title: "Treepixel 2.0",
+});
 </script>
 
 <template>
   <div :class="'h-100'">
-    <NuxtPage/>
+    <NuxtPage />
   </div>
 </template>
 

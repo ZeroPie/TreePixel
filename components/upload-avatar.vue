@@ -11,7 +11,7 @@ const props = defineProps({
 });
 const emit = defineEmits<{
   (ev: 'update:path', _path: string): void;
-  (ev: 'update:filePath', _path: string): void;
+  (ev: 'update:avatarFilePath', _path: string): void;
 }>();
 
 const uploading = ref<boolean>(false)
@@ -31,12 +31,12 @@ const uploadAvatar = async (evt: Event): Promise<void> => {
       return;
     }
     const fileName = `${Math.random()}.${fileExt}`;
-    const filePath = `${fileName}`;
+    const avatarFilePath = `${fileName}`;
     uploading.value = true;
-    let { error: uploadError } = await supabase.storage.from('avatars').upload(filePath, file);
+    let { error: uploadError } = await supabase.storage.from('avatars').upload(avatarFilePath, file);
     if (uploadError) throw uploadError;
-    emit("update:filePath", filePath);
-    const avatarPath = await avatarHelper.downloadAvatar(filePath);
+    emit("update:avatarFilePath", avatarFilePath);
+    const avatarPath = await avatarHelper.downloadAvatar(avatarFilePath);
     emit("update:path", avatarPath);
 
   } catch (error: any) {

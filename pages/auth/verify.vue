@@ -1,6 +1,12 @@
 <script lang="ts" setup>
 
 const supabase = useSupabaseClient()
+const user = useSupabaseUser()
+watchEffect(() => {
+  if (user.value) {
+    return navigateTo('/private/dashboard');
+  }
+});
 const route = useRoute()
 const email = ref<string>("INBOX")
 

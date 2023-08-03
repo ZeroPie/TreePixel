@@ -104,7 +104,6 @@ const handleUpdate = async () => {
         </div>
         <a class="btnsweply pointer" @click="handleUpdate()" v-bind:class="{ 'disabled': loading }">{{ loading ? 'Loading' :
           'Reset password' }}</a>
-        <!-- <p class="rememberTxt">Remembered my password</p> -->
       </div>
     </div>
   </div>
