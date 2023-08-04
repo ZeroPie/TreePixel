@@ -144,7 +144,7 @@ export default defineEventHandler(async (event) => {
           bot: "nobot",
         }),
         headers: {
-          Authorization: `Bearer p.eyJ1IjogIjA3MTAwYzlhLTg5NTMtNGE5ZC05Mzc2LWNkNzhiNjI2OTQ4YSIsICJpZCI6ICIxNWIxOGZmMC0xNzE4LTRhNGUtODBhYy0yMjc5ZTE0YThiY2EiLCAiaG9zdCI6ICJldV9zaGFyZWQifQ.HjzvyyOTLbt9wn2IGWbEHAyfXqCPFfgr7vf97ikE670`,
+          Authorization: `Bearer ` + process.env.TINYBIRD_ADD_KEY,
         },
       }
     ).then((res) => res.json());

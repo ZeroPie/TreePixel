@@ -156,7 +156,7 @@ const fetchData = () => {
     url.searchParams.append('dateParam', formatDate(fromDateTime.value));
     fetch(url, {
         headers: {
-            Authorization: 'Bearer p.eyJ1IjogIjA3MTAwYzlhLTg5NTMtNGE5ZC05Mzc2LWNkNzhiNjI2OTQ4YSIsICJpZCI6ICIxOThjZjM3OC0wMGRmLTQ4MzUtYTg0Ny1hZGY4YjdmY2M2MTMiLCAiaG9zdCI6ICJldV9zaGFyZWQifQ.OqrjSH4QO-ZocjnMGrb88PlQwwqWJBxg5Ej9RnMikyo'
+            Authorization: 'Bearer ' + process.env.TINYBIRD_CLICK_PIPE_KEY
         }
     })
         .then(r => r.json())
