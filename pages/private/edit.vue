@@ -718,6 +718,7 @@ const updateLink = async () => {
     alert(error.message)
   }
   else {
+    await fetch(`/api/delete?linkTo=${link.value}`)
     navigateTo(`/private/edit?link=${newLink.value}`)
   }
 }
