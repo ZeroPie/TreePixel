@@ -68,7 +68,7 @@ function fetchData() {
     let subTime : any;
 
     url = new URL(`https://api.tinybird.co/v0/pipes/referrer_pipe.json`)
-    auth = 'Bearer p.eyJ1IjogIjA3MTAwYzlhLTg5NTMtNGE5ZC05Mzc2LWNkNzhiNjI2OTQ4YSIsICJpZCI6ICIyYmM5MzBjNS1hOWUzLTQ4YTMtODFiNC03ZjkxOWRiZGNjYWYiLCAiaG9zdCI6ICJldV9zaGFyZWQifQ.Ir4binOtij3NnZKJQn1SCpf4ihixxmNvSfBd-bh-Q9o'
+    auth = 'Bearer ' + process.env.TINYBIRD_REFERRER_PIPE_KEY
     resStr = 'referrer'
 
     url.searchParams.append('linkTo', props.link ? props.link: '');

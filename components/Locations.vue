@@ -82,12 +82,12 @@ function fetchData() {
     switch (selected.value) {
         case 'Country':
             url = new URL(`https://api.tinybird.co/v0/pipes/country_pipe.json`);
-            auth = 'Bearer p.eyJ1IjogIjA3MTAwYzlhLTg5NTMtNGE5ZC05Mzc2LWNkNzhiNjI2OTQ4YSIsICJpZCI6ICJjM2FmODQwMi0xYWIwLTQ5MDQtYTBmNC1kYzA5ODcxZDM2MmEiLCAiaG9zdCI6ICJldV9zaGFyZWQifQ.psRaWfOIy9uzAPcMr366E6J8ai0S9vOT8_Ut-4MGLe4'
+            auth = 'Bearer ' + process.env.TINYBIRD_COUNTRY_PIPE_KEY
             resStr = 'country'
             break;
         case 'City':
             url = new URL(`https://api.tinybird.co/v0/pipes/city_pipe.json`)
-            auth = 'Bearer p.eyJ1IjogIjA3MTAwYzlhLTg5NTMtNGE5ZC05Mzc2LWNkNzhiNjI2OTQ4YSIsICJpZCI6ICIzMjExODZjMS0zNDEzLTQyMzctOTNjYi1kNGJlNTJkNTY3YmUiLCAiaG9zdCI6ICJldV9zaGFyZWQifQ.Gf5B6jCtjyafLOCidiVllrZ5akP66AN4qnrfvv3FCEY'
+            auth = 'Bearer ' + process.env.TINYBIRD_CITY_PIPE_KEY
             resStr = 'city'
             break;
     }

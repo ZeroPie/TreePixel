@@ -91,22 +91,22 @@ function fetchData() {
     switch(selected.value) {
         case 'Device':
             url = new URL(`https://api.tinybird.co/v0/pipes/device_pipe.json`)
-            auth = 'Bearer p.eyJ1IjogIjA3MTAwYzlhLTg5NTMtNGE5ZC05Mzc2LWNkNzhiNjI2OTQ4YSIsICJpZCI6ICI0N2Y0ZjIyYy1jYmE1LTQxY2ItOWUwZC01M2ZkYTQ1YWMyMDEiLCAiaG9zdCI6ICJldV9zaGFyZWQifQ.fDCJj_Ko1ShJeD73X4GhQYz0mXNkSIWFO3C6zSrmAIc'
+            auth = 'Bearer ' + process.env.TINYBIRD_DEVICE_PIPE_KEY
             resStr = 'device'
             break;
         case 'Browser':
             url = new URL(`https://api.tinybird.co/v0/pipes/browser_pipe.json`)
-            auth = 'Bearer p.eyJ1IjogIjA3MTAwYzlhLTg5NTMtNGE5ZC05Mzc2LWNkNzhiNjI2OTQ4YSIsICJpZCI6ICI2NjZhYzRiMC01MWM2LTQ5MTAtOWE1NS0zNzgwNmVhNzQ3ZGIiLCAiaG9zdCI6ICJldV9zaGFyZWQifQ.U380GW3R9Puc66Fh6439jAfcBaEnHdz451cPlBBlpjA'
+            auth = 'Bearer ' + process.env.TINYBIRD_BROWSER_PIPE_KEY
             resStr = 'browser'
             break;
         case 'Os':
             url = new URL(`https://api.tinybird.co/v0/pipes/os_pipe.json`)
-            auth = 'Bearer p.eyJ1IjogIjA3MTAwYzlhLTg5NTMtNGE5ZC05Mzc2LWNkNzhiNjI2OTQ4YSIsICJpZCI6ICI4NjlmMzcxYi05ZTJhLTRhNTItYmE0YS1iODJiMjIwMTc3MGMiLCAiaG9zdCI6ICJldV9zaGFyZWQifQ.JamcYxVeXLhHM-QP0U7pGWg6jd6roOFPH7vCttDaN6Y'
+            auth = 'Bearer ' + process.env.TINYBIRD_OS_PIPE_KEY
             resStr = 'os'
             break;
         case 'Bot':
             url = new URL(`https://api.tinybird.co/v0/pipes/bot_pipe.json`)
-            auth = 'Bearer p.eyJ1IjogIjA3MTAwYzlhLTg5NTMtNGE5ZC05Mzc2LWNkNzhiNjI2OTQ4YSIsICJpZCI6ICIyMjQxNzdiNy0yMDhkLTQ2MGMtYjgyNi02ZWI0YWU4YjgxNzUiLCAiaG9zdCI6ICJldV9zaGFyZWQifQ.8K5eYFpYVDtLIr3QlpeaM6Gmwd4V0OmuGPzs9jX_Anc'
+            auth = 'Bearer ' + process.env.TINYBIRD_BOT_PIPE_KEY
             resStr = 'bot'
             break;
     }
